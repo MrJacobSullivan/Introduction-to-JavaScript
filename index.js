@@ -161,25 +161,25 @@ function game(user, computer) {
   // scissors = 2
 
   if (user == 'rock') {
-    if (computer == 0) {
+    if (computer == 'rock') {
       return "it's a tie"
-    } else if (computer == 1) {
+    } else if (computer == 'paper') {
       return 'you lose!'
     } else {
       return 'you win!'
     }
   } else if (user == 'paper') {
-    if (computer == 0) {
+    if (computer == 'rock') {
       return 'you win!'
-    } else if (computer == 1) {
+    } else if (computer == 'paper') {
       return "it's a tie"
     } else {
       return 'you lose!'
     }
   } else if (user == 'scissors') {
-    if (computer == 0) {
+    if (computer == 'rock') {
       return 'you lose!'
-    } else if (computer == 1) {
+    } else if (computer == 'paper') {
       return 'you win!'
     } else {
       return "it's a tie"
